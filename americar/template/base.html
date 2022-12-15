@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmeriCar</title>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a186475d34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img class="logo nav-link" src="{% static 'images/logo.png' %}" width="180px">
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="{% url 'inicio' %}">inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="{% url 'flota' %}">flota</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="{% url 'faq' %}">FAQ</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="{% url 'testimonios' %}">reseñas</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="{% url 'contacto' %}">contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+{% block content %}
+{% endblock %}
+
+<div class="foot">
+</div>
+<footer>
+    <img class="foot-logo" src="{% static 'images/logo-blanco.png' %}">
+    <p>&copy Todos los derechos reservados - 2022</p>
+</footer>

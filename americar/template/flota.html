@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+    <main class="main-flota">
+        <div class="flota-container" id="data-car">
+        </div>
+    </main>
+   
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'backend-server/api.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}

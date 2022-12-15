@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main-rate">
+
+    <div class="title-rate">
+        <h3>¡Califícanos!</h3>
+    </div>
+    <div class="container-principal">
+
+        <div class="container-rate">
+            <div class="post">
+                <div class="text">¡Gracias por su reseña!</div>
+                <div class="edit">- editar -</div>
+            </div>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fa-solid fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fa-solid fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fa-solid fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fa-solid fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fa-solid fa-star"></label>
+                <form class="form-rate" action="#">
+                    <header></header>
+                    <div class="textarea">
+                        <textarea cols="30" placeholder="Dejanos tu experiencia..."></textarea>
+                    </div>
+                    <div class="btn">
+                        <button class="btn-com" type="submit">Comentar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="rate-all">
+
+        <div class="rate-user">
+            <div class="rate-done-post" id="rate">
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+            </div>
+            <div class="user-name">
+                <h5>Marisa</h5>
+            </div>
+            <div class="user-text">
+                <p>Muy buena experiencia, los volvería a contratar sin dudarlo.</p>
+            </div>
+        </div>
+        <div class="rate-user">
+            <div class="rate-done-post" id="rate">
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+            </div>
+            <div class="user-name">
+                <h5>Daiana</h5>
+            </div>
+            <div class="user-text">
+                <p>Los recomiendo siempre, tienen las mejores prestaciones y excelentes autos.</p>
+            </div>
+        </div>
+        <div class="rate-user">
+            <div class="rate-done-post" id="rate">
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+                <label for="rate" class="fa-solid fa-star"></label>
+            </div>
+            <div class="user-name">
+                <h5>Thailis</h5>
+            </div>
+            <div class="user-text">
+                <p>Excelente servicio y calidad en la atención.</p>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="{% static 'js/resena.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}

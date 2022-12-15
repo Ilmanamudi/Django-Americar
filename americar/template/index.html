@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<main class="main-index">
+
+    <div class="img-slider">
+    </div>
+    <div class="form-search">
+        <form class="search" id="form-search-id">
+            <div class="place">
+                <label for="retiro">Lugar de retiro</label>
+                <select name="retiro" class="field-place" placeholder="Lugar de retiro" required>
+                    <option value="">Aeroparque</option>
+                    <option value="">Aeropuerto de Ezeiza</option>
+                </select>
+            </div>
+            <div class="place-date">
+                <label for="fechaRetiro" text-label>Fecha de retiro</label>
+                <input type="date" id="fechaRetiro" class="field-date" required>
+            </div>
+
+            <div class="place-time">
+                <label for="time-Retire" text-label>Hora</label>
+                <input type="time" id="time-Retire" class="field-time" required>
+            </div>
+
+            <div class="place">
+                <label for="devolucion">Lugar de devolución</label>
+                <select name="devolucion" class="field-place" placeholder="Lugar de devolucion" required>
+                    <option value="Aeroparque">Aeroparque</option>
+                    <option value="Ezeiza">Aeropuerto de Ezeiza</option>
+                </select>
+            </div>
+            <div class="place-date">
+                <label for="fechadevolucion">Fecha de devolución</label>
+                <input type="date" id="fechadevolucion" class="field-date" required>
+            </div>
+
+            <div class="place-time">
+                <label for="time-dev">Hora</label>
+                <input type="time" id="time-dev" class="field-time" required>
+            </div>
+            <input type="submit" value="Buscar" class="send">
+        </form>
+    </div>
+
+</main>
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}
