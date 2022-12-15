@@ -3,7 +3,7 @@
 set -o errexit
 
 #poetry install
-#pip install -r requirements.txt
+pip install -r requirements.txt
 poetry install
 pip install --upgrade pip
 pip install --force-reinstall -U setuptools
