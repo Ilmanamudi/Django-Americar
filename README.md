@@ -1,7 +1,7 @@
 # Django-Americar (Proyecto para Codo a Codo 4.0 - FullStack Python - 2022)
 
-Pagina web de alquiler de autos
-
+Pagina web de alquiler de autos con backend en Django
+Link del deploy: https://americar.onrender.com/
 
 Para el desarrollo del proyecto utilizamos HTML, CSS y JS. El mismo cuenta con 5 páginas: Inicio, Flota, faq, Reseñas y Contacto.
 
